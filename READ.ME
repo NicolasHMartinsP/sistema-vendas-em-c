@@ -1,0 +1,79 @@
+# 💻 Sistema de Vendas em C
+
+Este Trabalho implementa um sistema de vendas simples, desenvolvido na linguagem C, com funcionalidades de cadastro de cliente, seleção de produtos, cálculo de descontos, aplicação de juros compostos para compras a crédito parcelado e emissão de recibo com data e hora.
+
+Desenvolvido como exercício prático de lógica de programação e estruturas básicas em C.
+
+---
+
+## 📋 Funcionalidades principais
+
+✅ **Menu interativo com 6 produtos disponíveis**  
+✅ **Cálculo automático de subtotal por produto e quantidade**  
+✅ **Pergunta se o cliente deseja continuar comprando ou finalizar**  
+✅ **Sistema de cadastro com nome completo e CPF**  
+✅ **Desconto de 10% para pagamentos em dinheiro ou débito**  
+✅ **Desconto adicional de 5% para clientes cadastrados**  
+✅ **Pagamento em crédito com escolha de parcelas (juros compostos de 2% ao mês)**  
+✅ **Exibição do recibo final com data e hora da compra**
+
+---
+
+## 🛒 Produtos disponíveis
+
+| Código | Produto                                | Preço (R$) |
+|--------|----------------------------------------|------------|
+| 1      | Bíblia luxo JesusCopy                  | 109.90     |
+| 2      | Guia Prático para Evangelização        | 44.90      |
+| 3      | Jesus não é quem você pensa            | 69.90      |
+| 4      | Box livros Red                         | 134.00     |
+| 5      | Bíblia Sticker 2.0 Off-White           | 99.90      |
+| 6      | Bíblia Filament                        | 164.90     |
+
+---
+
+## 🧮 Regras de cálculo
+
+### 💰 Descontos
+- **Pix ou Débito**: 5% de desconto no subtotal.
+- **Cliente cadastrado**: desconto adicional de 5%.
+- Os descontos são acumulativos e aplicados em sequência.
+
+### 💳 Crédito parcelado
+- Pagamentos no crédito recebem **juros compostos de 2% ao mês**.
+- O cliente pode escolher o número de parcelas.
+- O sistema exibe o valor final com juros e o valor de cada parcela.
+
+---
+
+## 🧾 Recibo final
+
+Ao fim da compra, o sistema gera um recibo com:
+
+- Nome e CPF do cliente (se cadastrado)
+- Lista de produtos comprados
+- Subtotal
+- Descontos aplicados
+- Forma de pagamento
+- Valor final com ou sem juros
+- Data e hora atual da compra
+
+---
+
+## 📚 Conteúdo aprendido com o projeto
+
+- Estruturas (`struct`)
+- Laços (`do while`, `switch`, `if`)
+- Entrada e saída formatadas (`scanf`, `printf`)
+- Manipulação de strings e buffers (`fgets`, `strcspn`)
+- Cálculo de juros compostos
+- Controle de fluxo com menus e decisões
+- Modularidade do código e boas práticas de formatação
+- Bibliotecas novas (`<string.h>`,`<math.h>`,`<time.h>`)
+---
+
+## 🚀 Como executar
+
+1. Compile com um compilador C como `gcc`:
+   ```bash
+   gcc -o sistema main.c
